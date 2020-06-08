@@ -39,6 +39,18 @@ public class PokemonTest {
         toTest.forgetMove(aa);
         toTest.forgetMove(b);
         assertTrue(toTest.learnMove(e));
+        assertTrue(toTest.learnMove(a));
+    }
+
+    @Test
+    public void moveKnowlage(){
+        assertTrue(toTest.knowsMove(a));
+        assertTrue(toTest.knowsMove(aa));
+        assertTrue(toTest.knowsMove("one"));
+        assertFalse(toTest.knowsMove(b));
+        assertFalse(toTest.knowsMove("two"));
+        assertTrue(toTest.learnMove(b));
+        assertTrue(toTest.knowsMove(b));
     }
 
     @Test

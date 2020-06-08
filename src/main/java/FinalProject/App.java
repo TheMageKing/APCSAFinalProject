@@ -15,5 +15,6 @@ public final class App {
         System.out.println("Hello World!");
         PokemonSimulator n = new PokemonSimulator();
         n.initGame();
+        n.runFight();
     }
 }
