@@ -51,8 +51,63 @@ public class PokemonTrainer {
         }
         return null;
     }
+
     // Returns this PokemonTrainer's name
     public String toString(){
         return name;
+    }
+
+    public static PokemonTrainer setupTrainer(){
+        ConsoleProgram.readLine("'Trainer', what is your NAME? ");
+        String name = ConsoleProgram.readLine("Don't lie to me, so-called 'Trainer'.  WHAT. IS. YOUR. NAME! ");
+        PokemonTrainer trainer = new PokemonTrainer(name);
+        System.out.println();
+        System.out.println("Okay, fine, we'll go with that.  Lets setup your ~slaves~ pokemon.");
+        System.out.println();
+        trainer.addPokemon(setupPlayerPokemon());
+        System.out.println();
+        ConsoleProgram.readLine("You sure? He seems puny.  Have you been feeding the poor bastard enough? ");
+        System.out.println("No? Nor will you ever? Poor thing.  I'd call PETP, but SOMEONE (you) cut off my phone");
+        System.out.println("Oh well.  We'll go on to your seccond ~enslaved innocent~ pokemon");
+        System.out.println();
+        trainer.addPokemon(setupPlayerPokemon());
+
+        return trainer;
+    }
+
+    public static Pokemon setupPlayerPokemon(){
+        Pokemon p = new Pokemon(ConsoleProgram.readLine("Pokemon's name?"));
+        System.out.println("Now lets teach 'em some MOVES");
+        while(p.canLearnMoreMoves()){
+            String name = ConsoleProgram.readLine("Whats the move named?");
+            int damage = ConsoleProgram.readInt("How much damage does it do?");
+            System.out.println("Forging the move... okay!");
+            p.learnMove(new Move(name, damage));
+            System.out.println();
+            if(!ConsoleProgram.readBoolean("Wanna teach another? (Y/N)")){
+                break;
+            }
+            if(!p.canLearnMoreMoves()){
+                System.out.println("Too bad! Your poor 'assistant' has learned all they could, with how little they have been fed lately");
+            }
+            System.out.println();
+        }
+        System.out.println("Here is the poor bastard you produced:");
+        System.out.println(p);
+        return p;
+    }
+
+    public String getNextMove(){
+        System.out.print("\nHere are the moves you know:");
+        Pokemon p = getNextPokemon();
+        System.out.println(p.getMoves() + "\n");
+        String ret = null;
+        while(ret == null){
+            String mv = ConsoleProgram.readLine("What move would you like to use?");
+            if(p.knowsMove(mv)){
+                ret = mv;
+            }
+        }
+        return ret;
     }
 }

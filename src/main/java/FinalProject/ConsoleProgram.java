@@ -15,12 +15,12 @@ public class ConsoleProgram{
 
     }
 
-    public String readLine(String prompt){
+    public static String readLine(String prompt){
         System.out.print(prompt);
         return scanner.nextLine();
     }
 
-    public boolean readBoolean(String prompt){
+    public static boolean readBoolean(String prompt){
 
         while(true){
             String input = readLine(prompt);
@@ -35,7 +35,7 @@ public class ConsoleProgram{
         }
     }
 
-    public double readDouble(String prompt){
+    public static double readDouble(String prompt){
 
         while(true){
             String input = readLine(prompt);
@@ -49,7 +49,7 @@ public class ConsoleProgram{
     }
 
     // Allow the user to get an integer.
-    public int readInt(String prompt){
+    public static int readInt(String prompt){
 
         while(true){
             String input = readLine(prompt);
@@ -65,140 +65,140 @@ public class ConsoleProgram{
     /**
      * Allows us to use a shorthand version for System.out.println()
      */
-    public void println() {
+    public static void println() {
         System.out.println();
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(String s)
      */
-    public void println(String s) {
+    public static void println(String s) {
         System.out.println(s);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(boolean x)
      */
-    public void println(boolean x) {
+    public static void println(boolean x) {
         System.out.println(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(char x)
      */
-    public void println(char x) {
+    public static void println(char x) {
         System.out.println(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(char[] x)
      */
-    public void println(char[] x) {
+    public static void println(char[] x) {
         System.out.println(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(int x)
      */
-    public void println(int x) {
+    public static void println(int x) {
         System.out.println(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(long x)
      */
-    public void println(long x) {
+    public static void println(long x) {
         System.out.println(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(float x)
      */
-    public void println(float x) {
+    public static void println(float x) {
         System.out.println(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(double x)
      */
-    public void println(double x) {
+    public static void println(double x) {
         System.out.println(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.println(Object o)
      */
-    public void println(Object o) {
+    public static void println(Object o) {
         System.out.println(o);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print()
      */
-    public void print() {
+    public static void print() {
         System.out.print("");
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(String s)
      */
-    public void print(String s) {
+    public static void print(String s) {
         System.out.print(s);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(boolean x)
      */
-    public void print(boolean x) {
+    public static void print(boolean x) {
         System.out.print(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(char x)
      */
-    public void print(char x) {
+    public static void print(char x) {
         System.out.print(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(char[] x)
      */
-    public void print(char[] x) {
+    public static void print(char[] x) {
         System.out.print(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(int x)
      */
-    public void print(int x) {
+    public static void print(int x) {
         System.out.print(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(long x)
      */
-    public void print(long x) {
+    public static void print(long x) {
         System.out.print(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(float x)
      */
-    public void print(float x) {
+    public static void print(float x) {
         System.out.print(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(double x)
      */
-    public void print(double x) {
+    public static void print(double x) {
         System.out.print(x);
     }
 
     /**
      * Allows us to use a shorthand version for System.out.print(Object o)
      */
-    public void print(Object o) {
+    public static void print(Object o) {
         System.out.print(o);
     }
 }
