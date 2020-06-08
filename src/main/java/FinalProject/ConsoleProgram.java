@@ -4,15 +4,10 @@ import java.util.*;
 
 public class ConsoleProgram{
 
-    private Scanner scanner;
+    private static Scanner scanner = new Scanner(System.in);
 
     public void run(){
         /* Overridden by subclass */
-    }
-
-    public ConsoleProgram(){
-        scanner = new Scanner(System.in);
-
     }
 
     public static String readLine(String prompt){

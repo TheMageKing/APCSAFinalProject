@@ -1,7 +1,5 @@
 package FinalProject;
 
-import java.util.ArrayList;
-
 public class PokemonSimulator extends ConsoleProgram {
     PokemonTrainer playerOne;
     PokemonTrainer playerTwo;
