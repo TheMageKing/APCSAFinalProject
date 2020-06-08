@@ -5,10 +5,19 @@ import java.util.ArrayList;
 public class Pokemon {
     private final String name;
     private int health = 100;
-    private ArrayList<Move> knownMoves = new ArrayList<Move>(4);
+    private final ArrayList<Move> knownMoves = new ArrayList<Move>(4);
+
+    private String image;
+    public static final PokemonImages picFinder = new PokemonImages();
 
     public Pokemon(String na){
         name = na;
+        image = picFinder.getPokemonImage(na);
+    }
+
+    public Pokemon(String na, String im){
+        this(na);
+        image = im;
     }
 
     /**
@@ -66,12 +75,26 @@ public class Pokemon {
 
     }
 
+    /**
+     * Sets this Pokemon's image to be `image`
+     */
+    public void setImage(String image){
+        this.image = image;
+    }
+
+    /**
+     * Returns the ASCII Art image for this Pokemon
+     */
+    public String getImage(){
+        return image;
+    }
+
     /*
     * Return a String containing the name and health
     * of this Pokemon
     * Example: "Pikachu (Health: 85 / 100)"
     */
     public String toString(){
-        return name + " (Health: " + health + " / 100)";
+        return image+ "\n"+ name + " (Health: " + health + " / 100)";
     }
 }

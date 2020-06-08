@@ -37,6 +37,17 @@ public class PokemonTest {
         toTest.forgetMove(b);
         assertTrue(toTest.learnMove(e));
     }
+
+    @Test
+    public void pokemonImage(){
+        PokemonImages images = new PokemonImages();
+
+        // Get an image by Pokemon
+        Pokemon charmander = new Pokemon("Charmander");
+        String charmanderImage = images.getPokemonImage(charmander);
+        assertEquals(charmanderImage, images.getPokemonImage("Charmander"));
+        System.out.println(charmander);
+    }
     
     
 
