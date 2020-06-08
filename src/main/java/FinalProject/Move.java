@@ -34,7 +34,9 @@ public class Move{
 
     }
 
-    public boolean equals(Move m){
-        return m.name == name;
+    @Override
+    public boolean equals(Object m){
+        Move b = (Move) m;
+        return b.name == name;
     }
 }

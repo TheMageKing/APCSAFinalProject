@@ -66,9 +66,64 @@ public class Pokemon {
 
     }
 
+    /**
+     * Returns an ArrayList of all the Moves this Pokemon knows
+     */
+    public ArrayList<Move> getMoves(){
+        return knownMoves;
+    }
+    /**
+     * Returns true if the Pokemon knows this move (has this Move
+     * in its collection), false otherwise
+     */
+    public boolean knowsMove(Move move){
+        return knownMoves.contains(move);
+    }
+
+    /**
+     * Returns true if the Pokemon knows a Move with
+     * the name `moveName`, false otherwise
+     */ 
+    public boolean knowsMove(String moveName){
+        return knowsMove(new Move(moveName, 1));
+    }
+
     /*
-    * Remove the Move `move` from this Pokemon's
-    * collection of Moves, if it's there.
+     * Tries to perform the Move `move` on the Pokemon `other`
+     * A Pokemon can only use a Move if it knows the Move
+     * An attack should subtract the damage of the Move
+     * from the health of the opponent.
+     * Returns true if the Pokemon knew the Move and used it
+     * Returns false otherwise.
+    */
+    public boolean attack(Pokemon opponent, Move move){
+        int moveDex = knownMoves.indexOf(move);
+        if(moveDex==-1){
+            return false;
+        }
+        opponent.health -= knownMoves.get(moveDex).getDamage();
+        return true;
+    }
+
+
+    /*
+     * Tries to perform a Move with the name `moveName` on
+     * the Pokemon `other`
+     * A Pokemon can only use a Move if it knows the Move
+     * An attack should subtract the damage of the Move
+     * from the health of the opponent.
+     * Returns true if the Pokemon knew the Move and used it
+     * Returns false otherwise.
+    */
+    public boolean attack(Pokemon opponent, String moveName){
+        return attack(opponent, new Move(moveName, 1));
+    }
+
+
+
+    /*
+     * Remove the Move `move` from this Pokemon's
+     * collection of Moves, if it's there.
     */
     public void forgetMove(Move move){
         knownMoves.remove(move);
@@ -95,6 +150,9 @@ public class Pokemon {
     * Example: "Pikachu (Health: 85 / 100)"
     */
     public String toString(){
-        return image+ "\n"+ name + " (Health: " + health + " / 100)";
+        return (image != null ? image+ "\n": "")+ name + " (Health: " + health + " / 100)";
     }
+
+
+
 }
