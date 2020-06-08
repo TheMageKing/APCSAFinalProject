@@ -1,0 +1,490 @@
+PokemonTrainer.java:
+-------------------
+public class PokemonTrainer
+{
+    // private constants
+    private static final int MAX_POKEMON = 2;
+    
+    // Write your PokemonTrainer class here
+}
+
+
+pokemonImages.txt:
+-----------------
+$$ This file holds ASCII Images for a couple Pokemon
+$$
+$$ Image courtesy of http://pokemon.wikia.com/wiki/Bulbasaur
+$$ Converted to ASCII Art with http://manytools.org/hacker-tools/convert-images-to-ascii-art/
+##Bulbasaur
+           (((                                   
+      .(((/((((((((((((((                        
+       ((((( ((((((((((((((( ((                  
+      /(((((( ((((((((((((((( ((                 
+      ((((((((((((((/### .((   ./((/.  (####     
+    .((((((((( (((((*#################  *####    
+   ((((((((((((*((( (##############.,,, #####    
+  ( (((((((((((//((((##############*,, #######   
+ (/(((((((((((((( .((######### ##, ##### ###  #  
+/(,((((((((((((((  ((#### @,@ #########,, ##@,@# 
+//((((((((((((( ## ((### @ ,@, #######( ,,#/@,   
+/// ((((((((( ,,.#######@@ ,@,, ############,,, *
+ ///,*//// ,,,,, #######@@ ,,,,.############ (###
+  ,////  # ,,,,.################################ 
+       ##################.  (#############. ##   
+     ######### ####### ####################      
+    # ,. *##  #########(((   ########. .####     
+   #.,,,,(###### .,####*(((((((((((((((######    
+   ###( (### ##,,,,#####(((((((((((((((#### .#   
+   (######## (##,,.####(((((((((((( (((###.,,#   
+    ((######*(###  #### ((((((      ,((####/ #   
+    *(((((((( (#######*((####,       .((######%  
+      &@,& /@  ( #/#     ,             ((,@# 
+$$ Image courtesy of http://pokemon.wikia.com/wiki/Charmander
+$$ Converted to ASCII Art using http://manytools.org/hacker-tools/convert-images-to-ascii-art/
+##Charmander
+                   ,%%(((((,.                    
+                 ,#(((((((((((.                  
+            ,/((((((((/##.(((((*                 
+          //(((((((((...../(((((                 
+          .,,*.(((((**..*#(((((((                
+           .,,,,,.((((((((((((((            #    
+            %.,,,./,(((((((((((*          &&   
+        ,     ..###/*((((((((((%         &&&&&(  
+      ,((((%.,,##/.(((((((((((/    *,. %&&/#(  
+      .(((((///(((((///((((**%%#(((((, &&&&////  
+        /((((((((*(/(((((((((((((((((, (&//////  
+         .(((((/&&&&%/(((((((((((((.    ##*(*/&  
+           .((,&&&&&&&,(((((((//,          (,    
+             *&&&&&&&&&/((((//(/           (,    
+             %&&&&&&&&&*((((((((          *(*    
+            ,&&&&&&&&&((((((((.        ,(((    
+            *&&&&&&&&&&(((((((((,      ,((((%    
+       .%%((,&&&&&&&&&&,((((((((*  .,(((((%,     
+      .%(((((*&&&&&&&&,(((((((((*/((((((,%*      
+/(*,, ,(((////*&&&&((((((((((/,//((*(%*        
+ #*((((((///////(%%%/((((((((((/,*%%%%.          
+    */////////,.  /////(((((///*%%(.             
+      ./////         /////////%                  
+         ..           ./////,                    
+                     /,,/,/,,                    
+                      %,%#,,.   
+$$ Image courtesy of http://pokemon.wikia.com/wiki/Squirtle
+$$ Converted to ASCII Art using http://manytools.org/hacker-tools/convert-images-to-ascii-art/
+##Squirtle
+                              @@(*******@@       
+                           @@**************@     
+                          @******/ &*********@   
+                         @******% %%/*******@*@  
+                   @    @******@%@%@*********,   
+                  @**&@ @******/&%@@********@%   
+                &***@*@*@&****/*************@@@  
+                @//*@*****/**********@********@  
+   @@*****%@     @///******@*****************@   
+ @**********&   @(@///*******%*************@     
+@************@ @(((&////****@,,,*/@@((&@/***@    
+//************@#((((&////**@,,,,,,,,,,,@********@
+///*****@*****##((((  (//,&,,,,@,,,,,,,,*********
+@///////@****@#@(((  (,,,,,,,,,,,,,,,,,(/////***@
+ @@//#@******@##@#  @,,,,,,,,,,,,,,@,,,@         
+  @/////*****@##@,*/,,,,,,@@,,,,,,#,,,,          
+    @/////****##/****@,,,,,,,#@,,,,,,,@          
+      @#/////*@*******%,,,,,,,,,,,,,@**@         
+          @@(%*********@*******/**@*****@        
+             %********/@******@@/*******@        
+             ********/@       @////*****@@       
+          @*********/           @////////@       
+             /*****%              %//@@     
+$$ Image courtesy of http://pocket-monstersbr.tumblr.com/
+$$ Converted to ASCII Art using http://manytools.org/hacker-tools/convert-images-to-ascii-art/
+##Pikachu
+ @&&&(                            (@&&&          
+  @@&..*&                     (&../&&&           
+   %&.....&.                &.....#&             
+     &......#. ,&@&&&@%,  %......&               
+       *&................,...,&/                 
+          ./...............&,         /@/..&     
+          &..,*........#&...(    /@*........%    
+          &.%&%&......(@@&..&%#..............%   
+          (........*......,.(...,.............&  
+         #(((/..,%###(..*((((*.../**,,.........& 
+          @(#....(///.....(......**********(%&@& 
+            &......*....,.......@,             
+           (.....,..,,./......**(.               
+           #.................&***(.              
+          .,....(........,(*******/,             
+          .,....*...........**%                  
+       &/(./..../...........###&                 
+       &*,../..,/..../.(,(...%&.                 
+        #**...,,,,....(**..../                   
+         /**************/*,.&                    
+          &%,**,...#@#*(*/&* 
+
+Pokemon.java:
+------------
+public class Pokemon
+{
+    // Copy over your Pokemon class into here
+    
+}
+
+
+PokemonTrainerTester.java:
+-------------------------
+public class PokemonTrainerTester extends ConsoleProgram
+{
+    PokemonImages images = new PokemonImages();
+    
+    public void run()
+    {
+        // Test out your PokemonTrainer class here!
+        
+    }
+}
+
+
+Move.java:
+---------
+public class Move
+{
+    // Copy over your Move class into here
+    
+}
+
+
+PokemonImages.java:
+------------------
+import java.util.*;
+import java.io.*;
+
+// This is the PokemonImages class
+// It acts as a dictionary to get ASCII art for a given pokemon name
+// Feel free to explore this code, it uses FileReader and BufferedReader
+// to read in Pokemon images from the "pokemonImages.txt" file.
+// DO NOT CHANGE THIS CODE, the program may not work if you do.
+public class PokemonImages {
+	private HashMap<String, String> pokedex;
+	private static final String IMAGE_FILE = "pokemonImages.txt";
+	
+	public PokemonImages()
+	{
+		pokedex = new HashMap<String, String>();
+		loadImages(IMAGE_FILE);
+	}
+	
+	public String getPokemonImage(String name)
+	{		
+		return pokedex.get(name.toLowerCase());
+	}
+	
+	public String getPokemonImage(Pokemon pokemon)
+	{
+		String name = pokemon.getName().toLowerCase();
+		return pokedex.get(name);
+	}
+	
+	public void setPokemonImage(String pokemonName, String image)
+	{
+		if(pokemonName != null && image != null)
+		{
+			pokedex.put(pokemonName, image);
+		}
+	}
+	
+	private void loadImages(String filename)
+	{
+	    // Try to do the following code, but there may be errors
+	    // when reading the file.
+		try {
+			
+			// Create a BufferedReader to read from the file where the 
+			// ASCII Art is stored
+			BufferedReader input = new BufferedReader(new FileReader(filename));
+			String line = input.readLine();
+			String currentImage = "";
+			String currentPokemon = null;
+			
+			// Read each line of the file and add each pokemon name and image 
+			// to the HashMap
+			while(line != null)
+			{
+				// Comment line, we can skip it
+				if(line.startsWith("$$"))
+				{
+					line = input.readLine();
+					continue;
+				}
+				
+				// The "##" indicates a new pokemon name
+				// Store the old pokemon if there was one and start a new pokemon
+				else if(line.startsWith("##"))
+				{
+					if(currentPokemon != null)
+					{
+						pokedex.put(currentPokemon, currentImage);
+					}
+					
+					// Get the name of the new pokemon
+					currentPokemon = line.substring(2).toLowerCase();
+					currentImage = "";
+				}
+				
+				else
+				{
+					currentImage += line + "\n";
+				}
+				
+				line = input.readLine();
+			}
+		
+			// Fencepost situation
+			// The last pokemon has not been added yet, add it to the HashMap
+			if(currentPokemon != null)
+			{
+				pokedex.put(currentPokemon, currentImage);
+			}
+			
+			input.close();
+		} 
+		
+		// If there were any errors when reading the file
+		// they will be handled by these `catch` clauses
+		catch (FileNotFoundException e) {
+			System.out.println("Couldn't open file: " + filename);
+		} catch (IOException e) {
+			System.out.println("There was an error while reading the file: " + filename);
+			e.printStackTrace();
+		}
+	}
+}
+
+
+ConsoleProgram.java:
+----
+import java.util.*;
+
+public class ConsoleProgram{
+
+    private Scanner scanner;
+
+    public static void main(String[] args){
+        // Assume the class name is passed in as the first argument.
+
+        if(args.length == 0){
+            System.out.println("Please provide the name of the main class as an argument.");
+            return;
+        }
+
+        String mainClassName = args[0];
+
+        try{
+            Class mainClass = Class.forName(mainClassName);
+            Object obj = mainClass.newInstance();
+            ConsoleProgram program = (ConsoleProgram)obj;
+            program.run();
+        } catch (IllegalAccessException ex) {
+            System.out.println("Error in program. Make sure you extend ConsoleProgram");
+        } catch (InstantiationException ex) {
+            System.out.println("Error in program. Make sure you extend ConsoleProgram");
+        } catch (ClassNotFoundException ex) {
+            System.out.println("Error in program. Make sure you extend ConsoleProgram");
+        }
+    }
+
+    public void run(){
+        /* Overridden by subclass */
+    }
+
+    public ConsoleProgram(){
+        scanner = new Scanner(System.in);
+
+    }
+
+    public String readLine(String prompt){
+        System.out.print(prompt);
+        return scanner.nextLine();
+    }
+
+    public boolean readBoolean(String prompt){
+
+        while(true){
+            String input = readLine(prompt);
+
+            if(input.equalsIgnoreCase("true")){
+                return true;
+            }
+
+            if(input.equalsIgnoreCase("false")){
+                return false;
+            }
+        }
+    }
+
+    public double readDouble(String prompt){
+
+        while(true){
+            String input = readLine(prompt);
+            try {
+                double n = Double.valueOf(input).doubleValue();
+                return n;
+            } catch (NumberFormatException e){
+
+            }
+        }
+    }
+
+    // Allow the user to get an integer.
+    public int readInt(String prompt){
+
+        while(true){
+            String input = readLine(prompt);
+            try {
+                int n = Integer.parseInt(input);
+                return n;
+            } catch (NumberFormatException e){
+
+            }
+        }
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println()
+     */
+    public void println() {
+        System.out.println();
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(String s)
+     */
+    public void println(String s) {
+        System.out.println(s);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(boolean x)
+     */
+    public void println(boolean x) {
+        System.out.println(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(char x)
+     */
+    public void println(char x) {
+        System.out.println(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(char[] x)
+     */
+    public void println(char[] x) {
+        System.out.println(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(int x)
+     */
+    public void println(int x) {
+        System.out.println(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(long x)
+     */
+    public void println(long x) {
+        System.out.println(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(float x)
+     */
+    public void println(float x) {
+        System.out.println(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(double x)
+     */
+    public void println(double x) {
+        System.out.println(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.println(Object o)
+     */
+    public void println(Object o) {
+        System.out.println(o);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print()
+     */
+    public void print() {
+        System.out.print("");
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(String s)
+     */
+    public void print(String s) {
+        System.out.print(s);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(boolean x)
+     */
+    public void print(boolean x) {
+        System.out.print(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(char x)
+     */
+    public void print(char x) {
+        System.out.print(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(char[] x)
+     */
+    public void print(char[] x) {
+        System.out.print(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(int x)
+     */
+    public void print(int x) {
+        System.out.print(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(long x)
+     */
+    public void print(long x) {
+        System.out.print(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(float x)
+     */
+    public void print(float x) {
+        System.out.print(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(double x)
+     */
+    public void print(double x) {
+        System.out.print(x);
+    }
+
+    /**
+     * Allows us to use a shorthand version for System.out.print(Object o)
+     */
+    public void print(Object o) {
+        System.out.print(o);
+    }
+}
+
+
