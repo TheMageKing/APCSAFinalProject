@@ -57,7 +57,7 @@ public class PokemonTrainer {
         return name;
     }
 
-    public static PokemonTrainer setupTrainer(){
+    public static PokemonTrainer setupPlayerTrainer(){
         ConsoleProgram.readLine("'Trainer', what is your NAME? ");
         String name = ConsoleProgram.readLine("Don't lie to me, so-called 'Trainer'.  WHAT. IS. YOUR. NAME! ");
         PokemonTrainer trainer = new PokemonTrainer(name);
