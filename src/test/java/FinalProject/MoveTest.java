@@ -24,4 +24,13 @@ public class MoveTest {
         Move t = new Move("Bob", 30);
         assertEquals(25, t.getDamage());
     }
+
+    @Test
+    public void equalityTest(){
+        Move t = new Move("Bob", 20);
+        Move b = new Move("Phil", 21);
+        Move d = new Move("Bob", 29);
+        assertTrue("IsEqual works", t.equals(d));
+        assertFalse("IsNotEqual works", t.equals(b));
+    }
 }

@@ -1,6 +1,6 @@
 package FinalProject;
 
-public class Move {
+public class Move{
     // Private constants
     private static final int MAX_DAMAGE = 25;
     private final int damage;
@@ -32,5 +32,9 @@ public class Move {
     public String toString(){
         return name +  " (" + damage + " Damage)";
 
+    }
+
+    public boolean equals(Move m){
+        return m.name == name;
     }
 }
