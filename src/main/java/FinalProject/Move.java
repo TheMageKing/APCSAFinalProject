@@ -8,7 +8,7 @@ public class Move{
 
     public Move(String na, int dmg){
         name = na;
-        damage = (dmg> MAX_DAMAGE)? 25 : dmg;
+        damage = (dmg> MAX_DAMAGE)? 25 : (dmg < 0) ? 0 : dmg;
     }
     
     /**

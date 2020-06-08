@@ -21,8 +21,14 @@ public class MoveTest {
 
     @Test
     public void tooMuchDamageTest(){
-        Move t = new Move("Bob", 30);
+        Move t = new Move("Bob", 26);
         assertEquals(25, t.getDamage());
+    }
+
+    @Test
+    public void tooLittleDamageTest(){
+        Move t = new Move("Mike", -1);
+        assertEquals(0, t.getDamage());
     }
 
     @Test

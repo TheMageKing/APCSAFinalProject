@@ -13,15 +13,16 @@ public class PokemonSimulator extends ConsoleProgram {
         println("Thats it for that trainer.  Off to number 2!  I hope they ~kill you~ have a nice day");
         println("Give them the computer! That's it.  Off we go again!");
         playerTwo = PokemonTrainer.setupTrainer();
+        println("Let the fighting... BEGIN!");
     }
 
     public PokemonTrainer runFight(){
         while(true){
-            if(!runHalfRound(playerOne, playerTwo)){
+            if(runHalfRound(playerOne, playerTwo)){
                 println(playerOne.toString() +" (Player one) WINS!");
                 return playerOne;
             }
-            if(!runHalfRound(playerTwo, playerOne)){
+            if(runHalfRound(playerTwo, playerOne)){
                 println(playerTwo.toString() +" (Player two) WINS!");
                 return playerTwo;
             }
