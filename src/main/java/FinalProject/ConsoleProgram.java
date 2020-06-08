@@ -1,3 +1,5 @@
+package FinalProject;
+
 import java.util.*;
 
 public class ConsoleProgram{
@@ -23,11 +25,11 @@ public class ConsoleProgram{
         while(true){
             String input = readLine(prompt);
 
-            if(input.equalsIgnoreCase("true")){
+            if(input.equalsIgnoreCase("true")|| input.equalsIgnoreCase("y")){
                 return true;
             }
 
-            if(input.equalsIgnoreCase("false")){
+            if(input.equalsIgnoreCase("false")|| input.equalsIgnoreCase("n")){
                 return false;
             }
         }
